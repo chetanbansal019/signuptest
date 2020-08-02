@@ -4,8 +4,13 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 90%;
   transform: translateY(-50%);
+  ion-button{
+    width: 40%;
+    margin: auto;
+    font-size: 1.2em;
+  }
 }
 
 #container strong {

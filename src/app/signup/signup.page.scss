@@ -1,0 +1,26 @@
+ion-header{
+    ion-title{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 90px 1px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+ion-content{
+    .top-text{
+        color: grey;
+        font-size: .8em;
+        p:nth-child(1){
+            margin-bottom: 2%;
+        }
+        p:nth-child(2){
+            margin-top: 0px;
+        }
+    }
+    ion-label{
+        color: grey;
+    }
+}
