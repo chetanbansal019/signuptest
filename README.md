@@ -1,4 +1,4 @@
-# signuptest
+# SignUp Test
 
 Run this command after cloning
 
