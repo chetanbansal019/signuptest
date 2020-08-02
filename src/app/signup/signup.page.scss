@@ -20,7 +20,27 @@ ion-content{
             margin-top: 0px;
         }
     }
+    .bottom-text{
+        color: grey;
+        font-size: .8em;
+        margin-top: 6%;
+        p:nth-child(1){
+            margin-bottom: 2%;
+        }
+        p:nth-child(2){
+            margin-top: 0px;
+        }
+    }
     ion-label{
         color: grey;
+    }
+}
+ion-footer{
+    ion-toolbar{
+        --border-width:0px;
+        ion-button{
+            --border-radius: 8px;
+            height: 40px;
+        }
     }
 }

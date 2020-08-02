@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Sign Up</ion-title>
+    <ion-title color="primary">Sign Up</ion-title>
     <ion-progress-bar value="0.25"></ion-progress-bar>
   </ion-toolbar>
 </ion-header>
@@ -31,12 +31,29 @@
   <ion-item>
     <ion-label position="floating">Password</ion-label>
     <ion-input type="password"></ion-input>
+    <ion-icon name="eye-off" slot="end" color="primary" (click)="$event.stopPropagation(); console.log('asd');" class="ion-align-self-end"></ion-icon>
   </ion-item>
 
   <ion-row>
-    <ion-col size="12" class="ion-text-center top-text">
-      <p>Wammer Turns Sharing Fun Photos and Videos</p>
-      <p>With Your Friends Into a Game</p>
+    <ion-col size="12" class="ion-text-center bottom-text">
+      <p>By continuing you agree to the Wammer</p>
+      <p><a href="#">Terms of Service</a>&nbsp;and&nbsp;<a href="#">Privacy Policy</a></p>
     </ion-col>
   </ion-row>
 </ion-content>
+<ion-footer text-center no-border transparent>
+  <ion-toolbar>
+    <ion-buttons slot="">
+      <ion-col size="6">
+        <ion-button (click)="back()" fill="solid" color="primary" expand="block" size="large">
+          Back
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button (click)="onClick()" fill="outline" expand="block" size="large">
+          Next
+        </ion-button>
+      </ion-col>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
